@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Bookmark Manager</title>
+  </head>
+
+  <body>
+    <!-- == Navbar == -->
+    <nav class="navbar" id="top">
+      <div class="logo">
+        <img src="images/logo-bookmark.svg" alt="" class="logo-image" />
+      </div>
+      <div class="navbar-menus">
+        <div class="navbar-menu">
+          <a href="#features" class="go-to-content">Features</a>
+        </div>
+        <div class="navbar-menu">
+          <a href="#downloads" class="go-to-content">Download</a>
+        </div>
+        <div class="navbar-menu">
+          <a href="#contact" class="go-to-content">Contact</a>
+        </div>
+        <button class="hot-action-button login-button">Login</button>
+      </div>
+
+      <div class="mobile-navbar hidden">
+        <div class="mobile-navbar-header">
+          <div class="navbar-logo">
+            <img
+              src="images/mobile-navbar-logo.png"
+              alt=""
+              class="logo-image"
+            />
+          </div>
+          <img src="images/icon-close.svg" alt="" id="closeMobileNavbar" />
+        </div>
+
+        <div class="mobile-navbar-menus">
+          <div class="navbar-menu">
+            <a href="#features" class="go-to-content">Features</a>
+          </div>
+          <div class="navbar-menu">
+            <a href="#downloads" class="go-to-content">Download</a>
+          </div>
+          <div class="navbar-menu has-margin-bottom">
+            <a href="#contact" class="go-to-content">Contact</a>
+          </div>
+          <button class="hot-action-button login-button mt-40">Login</button>
+        </div>
+
+        <div class="mobile-navbar-footer">
+          <div class="facebook">
+            <a href="http://www.facebook.com" target="_blank">
+              <img
+                src="images/icon-facebook.svg"
+                alt="facebook icon"
+                class="icon"
+              />
+              <img
+                src="images/icon-facebook-active.svg"
+                alt="facebook icon"
+                class="icon-active"
+              />
+            </a>
+          </div>
+          <div class="twitter">
+            <a href="http://www.twitter.com" target="_blank">
+              <img
+                src="images/icon-twitter.svg"
+                alt="twitter icon"
+                class="icon"
+              />
+              <img
+                src="images/icon-twitter-active.svg"
+                alt="twitter icon"
+                class="icon-active"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+      <img src="images/icon-hamburger.svg" alt="" id="openMobileNavbar" />
+    </nav>
+    <!-- XX Navbar XX -->
+    <div class="bg-rounded-left"></div>
+
+    <!-- == Main == -->
+    <main class="container">
+      <!-- == Hero section == -->
+      <section id="hero" class="hero-section">
+        <div class="left">
+          <p class="title">A Simple Bookmark Manager</p>
+          <p class="subtitle">
+            A clean and simple interface to organize your favourite websites.
+            Open a new browser tab and see your sites load instantly. Try it for
+            free.
+          </p>
+          <div class="buttons-container">
+            <button class="action-button mr-20">Get it on Chrome</button>
+            <button class="second-action-button">Get it on Firefox</button>
+          </div>
+        </div>
+
+        <div class="right">
+          <div class="hero-image">
+            <img src="images/illustration-hero.svg" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <!-- XX Hero section XX -->
+      <!-- == Features Section == -->
+      <section id="features" class="section features-section">
+        <div class="section-title-container">
+          <p class="title">Features</p>
+          <p class="subtitle">
+            Our aim is to make it quick and easy for you to access your
+            favourite websites. Your bookmarks sync between your devices so you
+            can access them on the go.
+          </p>
+        </div>
+        <div class="tabs-container">
+          <div class="tabs-titles">
+            <p class="tab-title active" id="tab1Title">Simple Bookmarking</p>
+            <p class="tab-title" id="tab2Title">Speedy Searching</p>
+            <p class="tab-title" id="tab3Title">Easy Sharing</p>
+          </div>
+          <div class="tabs-contents">
+            <div class="bg-rounded-right"></div>
+            <div class="tab-content" id="tab1Content">
+              <div class="left">
+                <img
+                  src="images/illustration-features-tab-1.svg"
+                  class="tab-image"
+                  alt=""
+                />
+              </div>
+              <div class="right">
+                <p class="title">Bookmark in one click</p>
+                <p class="subtitle">
+                  Organize your bookmarks however you like. Our simple
+                  drag-and-drop interface gives you complete control over how
+                  you manage your favourite sites.
+                </p>
+                <button class="action-button">More info</button>
+              </div>
+            </div>
+            <div class="tab-content hidden" id="tab2Content">
+              <div class="left">
+                <img
+                  src="images/illustration-features-tab-2.svg"
+                  class="tab-image"
+                  alt=""
+                />
+              </div>
+              <div class="right">
+                <p class="title">Intelligent search</p>
+                <p class="subtitle">
+                  Our powerful search feature will help you find saved sites in
+                  no time at all. No need to trawl through all of your
+                  bookmarks.
+                </p>
+                <button class="action-button">More info</button>
+              </div>
+            </div>
+            <div class="tab-content hidden" id="tab3Content">
+              <div class="left">
+                <img
+                  src="images/illustration-features-tab-3.svg"
+                  class="tab-image"
+                  alt=""
+                />
+              </div>
+              <div class="right">
+                <p class="title">Share your bookmarks</p>
+                <p class="subtitle">
+                  Easily share your bookmarks and collections with others.
+                  Create a shareable link that you can send at the click of a
+                  button.
+                </p>
+                <button class="action-button">More info</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- XX Features Section XX -->
+      <!-- == Download Section == -->
+      <section id="downloads" class="section download-section">
+        <div class="section-title-container">
+          <p class="title">Download the extension</p>
+          <p class="subtitle">
+            We’ve got more browsers in the pipeline. Please do let us know if
+            you’ve got a favourite you’d like us to prioritize.
+          </p>
+        </div>
+
+        <div class="downloads-container">
+          <!-- Chrome -->
+          <div class="browser-container">
+            <img src="images/logo-chrome.svg" alt="" class="browser-logo" />
+            <div class="browser-text">
+              <p class="browser-title">Add to Chrome</p>
+              <p class="browser-version">Minimum version 62</p>
+            </div>
+
+            <span class="dotted-border">
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </span>
+            <div class="download-button-container">
+              <button class="action-button">
+                Add & Install Extension
+              </button>
+            </div>
+          </div>
+          <!-- Firefox -->
+          <div class="browser-container mt-40">
+            <img src="images/logo-firefox.svg" alt="" class="browser-logo" />
+            <div class="browser-text">
+              <p class="browser-title">Add to Firefox</p>
+              <p class="browser-version">Minimum version 55</p>
+            </div>
+
+            <span class="dotted-border">
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </span>
+            <div class="download-button-container">
+              <button class="action-button">
+                Add & Install Extension
+              </button>
+            </div>
+          </div>
+          <!-- Opera -->
+          <div class="browser-container mt-80">
+            <img src="images/logo-opera.svg" alt="" class="browser-logo" />
+            <div class="browser-text">
+              <p class="browser-title">Add to Opera</p>
+              <p class="browser-version">Minimum version 46</p>
+            </div>
+
+            <span class="dotted-border">
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </span>
+            <div class="download-button-container">
+              <button class="action-button">
+                Add & Install Extension
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- XX Download Section XX -->
+      <!-- == FAQ Section == -->
+      <section class="section faq-section">
+        <div class="section-title-container">
+          <p class="title">
+            Frequently Asked Questions
+          </p>
+          <p class="subtitle">
+            Here are some of our FAQs. If you have any other questions you’d
+            like answered please feel free to email us.
+          </p>
+        </div>
+        <!-- First FAQ -->
+        <div class="faq-container">
+          <div class="faq-question">
+            <button class="faq-question-button has-border-top">
+              What is Bookmark?
+            </button>
+            <div class="arrow">
+              <img class="icon" src="./images/icon-arrow.svg" alt="" />
+              <img
+                class="icon-active hidden"
+                src="./images/icon-arrow-active.svg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="faq-answer hidden">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+            tincidunt justo eget ultricies fringilla. Phasellus blandit ipsum
+            quis quam ornare mattis.
+          </div>
+        </div>
+
+        <!-- Second FAQ -->
+        <div class="faq-container">
+          <div class="faq-question">
+            <button class="faq-question-button">
+              How can I request a new browser?
+            </button>
+            <div class="arrow">
+              <img class="icon" src="./images/icon-arrow.svg" alt="" />
+              <img
+                class="icon-active hidden"
+                src="./images/icon-arrow-active.svg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="faq-answer hidden">
+            Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa,
+            ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros
+            aliquet convallis ultricies. Mauris augue massa, ultricies non
+            ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis
+            ultricies. Mauris augue massa, ultricies non ligula. Suspendisse
+            imperdiet.
+          </div>
+        </div>
+        <!-- Third FAQ -->
+        <div class="faq-container">
+          <div class="faq-question">
+            <button class="faq-question-button">
+              Is there a mobile app?
+            </button>
+            <div class="arrow">
+              <img class="icon" src="./images/icon-arrow.svg" alt="" />
+              <img
+                class="icon-active hidden"
+                src="./images/icon-arrow-active.svg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="faq-answer hidden">
+            Sed consectetur quam id neque fermentum accumsan. Praesent luctus
+            vestibulum dolor, ut condimentum urna vulputate eget. Cras in ligula
+            quis est pharetra mattis sit amet pharetra purus. Sed sollicitudin
+            ex et ultricies bibendum.
+          </div>
+        </div>
+        <!-- Fourth FAQ -->
+        <div class="faq-container">
+          <div class="faq-question">
+            <button class="faq-question-button">
+              What about other Chromium browsers?
+            </button>
+            <div class="arrow">
+              <img class="icon" src="./images/icon-arrow.svg" alt="" />
+              <img
+                class="icon-active hidden"
+                src="./images/icon-arrow-active.svg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="faq-answer hidden">
+            Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat
+            mi, at euismod dui. Aliquam vitae neque eget nisl gravida
+            pellentesque non ut velit.
+          </div>
+        </div>
+        <div class="center">
+          <button class="action-button mt-40">More info</button>
+        </div>
+      </section>
+      <!-- XX FAQ Section XX -->
+    </main>
+    <!-- == Contact Section == -->
+    <section id="contact" class="contact-section">
+      <p class="title">35,000+ already joined</p>
+      <p class="subtitle">Stay up-to-date with what we’re doing</p>
+      <div class="contact-form">
+        <div class="email-container">
+          <img
+            src="images/icon-error.svg"
+            alt="email error icon"
+            class="error-icon hidden"
+          />
+
+          <input
+            type="email"
+            class="contact-email"
+            placeholder="Enter your email here"
+          />
+          <p class="email-error hidden">Whoops, make sure it's an email</p>
+        </div>
+        <button class="hot-action-button" id="contactUsButton">
+          Contact Us
+        </button>
+      </div>
+    </section>
+    <!-- XX Contact Section XX -->
+    <!-- XX Main XX -->
+    <!-- == Footer == -->
+
+    <footer class="footer">
+      <div class="left">
+        <div class="footer-logo">
+          <img src="images/logo-bookmark-white.png" alt="" />
+        </div>
+        <div class="footer-menus">
+          <div class="footer-menu">
+            <a href="#features" class="go-to-content">Features</a>
+          </div>
+          <div class="footer-menu">
+            <a href="#downloads" class="go-to-content">Download</a>
+          </div>
+          <div class="footer-menu">
+            <a href="#contact" class="go-to-content">Contact</a>
+          </div>
+        </div>
+      </div>
+      <div class="right">
+        <div class="facebook">
+          <a href="http://www.facebook.com" target="_blank">
+            <img
+              src="images/icon-facebook.svg"
+              alt="facebook icon"
+              class="icon"
+            />
+            <img
+              src="images/icon-facebook-active.svg"
+              alt="facebook icon"
+              class="icon-active"
+            />
+          </a>
+        </div>
+        <div class="twitter">
+          <a href="http://www.twitter.com" target="_blank">
+            <img
+              src="images/icon-twitter.svg"
+              alt="twitter icon"
+              class="icon"
+            />
+            <img
+              src="images/icon-twitter-active.svg"
+              alt="twitter icon"
+              class="icon-active"
+            />
+          </a>
+        </div>
+      </div>
+    </footer>
+    <!-- XX Footer XX -->
+    <!-- Back to top button -->
+    <a href="#top" class="back-to-top hidden" role="button">^</a>
+
+    <!-- JQuery -->
+    <script src="js/jquery.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
